@@ -29,4 +29,9 @@ public class FuncionarioPersistenceAdapter implements FuncionarioPort {
         funcionarioRepository.saveAll(funcionarioList);
     }
 
+    @Override
+    public void delete(Funcionario func) {
+        funcionarioRepository.delete(func);
+    }
+
 }

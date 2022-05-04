@@ -9,4 +9,6 @@ public interface FuncionarioPort {
     List<Funcionario> listAll();
 
     void saveTodosFuncionarios(List<Funcionario> funcionarioList);
+
+    void delete(Funcionario func);
 }
